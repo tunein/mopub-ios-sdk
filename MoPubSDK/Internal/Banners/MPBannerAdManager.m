@@ -246,7 +246,7 @@
 
 - (void)didFailToLoadAdapterWithError:(NSError *)error
 {
-    [self.delegate managerDidFailToLoadAd];
+    [self.delegate managerDidFailToLoadAdWithError:error];
     [self scheduleRefreshTimer];
 
     MPLogError(@"Banner view (%@) failed. Error: %@", [self.delegate adUnitId], error);
@@ -319,7 +319,7 @@
         // 1) remove it
         // 2) tell the delegate
         // 3) and note that there can't possibly be a modal on display any more
-        [self.delegate managerDidFailToLoadAd];
+        [self.delegate managerDidFailToLoadAdWithError:error];
         [self.delegate invalidateContentView];
         [self.onscreenAdapter unregisterDelegate];
         self.onscreenAdapter = nil;
