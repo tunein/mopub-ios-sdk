@@ -2,11 +2,11 @@
 
 - Adding error reporting from mopub
 - Expose hidden error within the mopub sdk
-
+- Removed two viewability folders (will add again in the future)
 
 # MoPub iOS SDK
 
-Thanks for taking a look at MoPub! We take pride in having an easy-to-use, flexible monetization solution that works across multiple platforms.
+Thanks for taking a ook at MoPub! We take pride in having an easy-to-use, flexible monetization solution that works across multiple platforms.
 
 Sign up for an account at [http://app.mopub.com/](http://app.mopub.com/).
 
